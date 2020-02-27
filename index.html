@@ -23,28 +23,33 @@
         .contenedor {
             padding-left: 0px !important;
             padding-right: 0px !important;
-            border: 1px solid #ccc;
-            background-color: #3b7fe6;
-        }
-
-        .contenedor2 {
-            /*border: 1px solid #ccc;*/
-            background-color: white;
+            background-color: #f9eac3;
         }
 
         .h1 {
-            font-family: 'Days One', sans-serif;
-            margin: 15px 0;
-            font-size: 1.75em;
+            font-family: 'DINProMedium', Arial, sans-serif;
+            font: 32px;
+            margin: 14px 0;
             font-weight: bold;
             line-height: 0.8em;
+            color: #445A64;
         }
 
         .h2 {
-            font-size: 0.75em;
+            font-size: 0.5em;
             margin: -5px 0 0;
-            font-weight: normal;
+            font-weight: bold;
+            color: #445A64;
         }
+
+        .h3 {
+            font-family: 'Days One', sans-serif;
+            font-size: 1.3rem;
+            color: gray;
+            font-weight: bold;
+        }
+
+
 
         footer {
             font-size: 0.75em;
@@ -57,9 +62,10 @@
 
 <body>
     <div class="container-fluid fondo">
-        <nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-sd" style="background-color: #3694d8;">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-toggleable-sd" style="background-color: #5D9B9B;">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="index.html">
@@ -68,15 +74,21 @@
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Como Funciona</a>
-                        <a class="nav-item nav-link" href="#">Nosotros</a>
-                        <a class="nav-item nav-link" href="#">Servicio</a>
-                        <a class="nav-item nav-link" href="#">Contacto</a>
+                        <a class="nav-item nav-link active" href="#como funciona">
+                            <h5>Como Funciona</h5>
+                        </a>
+                        <a class="nav-item nav-link" href="#servicio">
+                            <h5>Servicio</h5>
+                        </a>
+                        <a class="nav-item nav-link" href="#">
+                            <h5>Contacto</h5>
+                        </a>
                     </div>
                 </div>
         </nav>
 
 
+        <hr>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -92,8 +104,7 @@
                     <a href="#"><img class="d-block w-100" src="./imagenes/banner1.jpg" alt="Second slide"></a>
                 </div>
                 <div class="carousel-item">
-                    <a href="#"><img class="d-block w-100" src="./images/Hulk3.jpg"
-                            alt="Third slide"></a>
+                    <a href="#"><img class="d-block w-100" src="./images/Hulk3.jpg" alt="Third slide"></a>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -105,23 +116,36 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        <br>
-        <div class="jumbotron contenedor ">
+        <hr>
+
+
+        <div id="como funciona" class="jumbotron contenedor ">
+            <center>
+                <h1>¿Cómo Funciona RentCard?</h1>
+            </center>
+            <br>
             <div class="container">
                 <div class=" row">
                     <div class="col-xs-6 col-md-6">
                         <div class="thumbnail">
-                            <div class="caption" style="border-radius: 12px; background-color: azure;height: 300px ">
-                                <a href="https://www.facebook.com/">
-                                    <h1 align="center">Problema 1</h1>
-                                </a>
-                                <p>
-                                    <h2>Este parrafo es una descripción detallada de la problematica con la intension de
-                                        que
-                                        el
-                                        usuario la lea</h2>
-                                </p>
-                                <p align="center"><a href="#" class="btn btn-primary" role="button">Visitar</a>
+                            <div class="caption" style="border-radius: 5px; background-color:#f9eac3; height: 300px ">
+                                <div class="row">
+                                    <div align="center">
+                                        <img src="imagenes/carro.png" alt="Esta es un carro de nuestra compañia XD"
+                                            style=" width: 350px;margin-left: 65px;margin-bottom: 0px;margin-top: -50;">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div align="justify">
+                                        <p>RentCard es una plataforma facil y agil de usar, con ella puedes
+                                            obtener una tarjeta que te permite acceder a nuestros vehiculos
+                                            por el tiempo que tu desees. Lo mejor es que puedes parquear en
+                                            muchos de nuestros parqueaderos distribuidos en toda la ciudad
+                                            de Barranquilla.
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -135,6 +159,40 @@
                 </div>
             </div>
         </div>
+        <hr>
+
+        <div id="servicio">
+            <center>
+                <h1>Conviertete en un miembro de RentCar</h1>
+            </center>
+            <center>
+                <h3 class="subheader">Aplicar es super facil, solo debes ser mayor de edad (+18) y
+                     tener una licencia de conducción</h3>
+            </center>
+            <div class="row">
+                <div class="col-md-4">
+                    <div align="center">
+                        Registrate
+                        <img src="" alt="Imagen de Registro">
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div align="center">
+                        hola sebas, esto es una prueba
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div align="center">
+                        hola sebas, esto es una prueba
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
 
     </div>
 </body>
